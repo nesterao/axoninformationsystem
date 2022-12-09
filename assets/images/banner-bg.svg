@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1320"
+    viewBox="0 0 1920 1320">
+    <defs>
+        <style>
+            .a {
+                clip-path: url(#b);
+            }
+
+            .b {
+                opacity: 0.08;
+            }
+
+            .c {
+                fill: #5b5b5b;
+            }
+
+            .d {
+                fill: #c5c5c5;
+            }
+
+            .e {
+                fill: #004c7f;
+            }
+
+            .f {
+                fill: #f8a527;
+            }
+
+            .g {
+                fill: #fff;
+            }
+        </style>
+        <clipPath id="b">
+            <rect width="1920" height="1320" />
+        </clipPath>
+    </defs>
+    <g id="a" class="a">
+        <rect class="g" width="1920" height="1320" />
+        <g class="b" transform="translate(48.244 80.082)">
+            <rect class="c" width="795.224" height="795.224" rx="80"
+                transform="translate(974.165 -145.314) rotate(-9)" />
+            <rect class="d" width="962.738" height="962.738" rx="80"
+                transform="translate(-178.438 -176.298) rotate(-9)" />
+            <rect class="e" width="846.043" height="846.043" rx="80"
+                transform="translate(-60.464 887.002) rotate(-9)" />
+            <rect class="f" width="866.747" height="866.747" rx="80"
+                transform="translate(944.207 814.079) rotate(-9)" />
+        </g>
+    </g>
+</svg>

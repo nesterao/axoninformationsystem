@@ -1,0 +1,425 @@
+/* Run */
+/* npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  @apply text-gray-700;
+}
+
+.container {
+  @apply px-5 mx-auto;
+}
+
+.row {
+  @apply flex flex-wrap;
+}
+
+.navbar-area {
+  @apply absolute top-0 left-0 z-40 w-full py-2 duration-300 bg-transparent;
+}
+
+.sticky {
+  @apply fixed py-1 bg-white shadow;
+}
+
+@media (max-width: 1024px) {
+  .navbar-area {
+    @apply py-6;
+  }
+}
+
+.collapse.show {
+  @apply block;
+}
+
+.toggler-icon {
+  @apply relative block duration-300 bg-primary;
+  height: 2px;
+  width: 30px;
+  margin: 6px 0;
+}
+
+.sticky .toggler-icon {
+  @apply bg-gray-900;
+}
+
+.active>.toggler-icon:nth-child(1) {
+  @apply transform rotate-45;
+  top: 7px;
+}
+
+.active>.toggler-icon:nth-child(2) {
+  @apply opacity-0;
+}
+
+.active>.toggler-icon:nth-child(3) {
+  top: -8px;
+  transform: rotate(135deg);
+}
+
+.navbar-nav .nav-item a {
+  @apply relative inline-block px-4 py-3 text-primary capitalize duration-300;
+}
+
+.sticky .navbar-nav .nav-item a {
+  @apply text-gray-900;
+}
+
+.show .navbar-nav .nav-item a {
+  @apply text-gray-900;
+}
+
+.show .navbar-nav .nav-item.active a,
+.show .navbar-nav .nav-item a:hover,
+.sticky .navbar-nav .nav-item.active a,
+.sticky .navbar-nav .nav-item a:hover {
+  @apply text-primary;
+}
+
+.gradient-btn {
+  @apply bg-primary;
+  overflow: hidden;
+}
+
+.gradient-btn-2 {
+  @apply bg-primary;
+  /* background-image: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%); */
+}
+
+.gradient-btn:hover {
+  background-position: right center;
+  @apply shadow-xl;
+}
+
+.main-btn {
+  @apply inline-block px-6 py-3 font-medium text-white duration-300 bg-primary rounded-lg;
+}
+
+.main-btn:hover {
+  @apply bg-blue-600;
+}
+
+.header-hero {
+  background-image: url("/assets/images/banner-bg2.svg");
+  /* background: linear-gradient(60deg, rgba(0, 171, 193, 0.398) 20%, rgba(84, 58, 183, 0.4) 80%); */
+  @apply relative z-20 pt-24 pb-16;
+}
+
+.our-clients {
+  background-image: url("/assets/images/banner-bg2.svg");
+  @apply relative pt-24;
+}
+
+
+/* .single-logo {
+  max-width: 190px;
+  @apply px-3 mt-8 duration-300 opacity-50;
+} */
+
+
+
+.section-title .line {
+  /* background: linear-gradient(#fe8464 0%, #fe6e9a 100%); */
+  @apply m-auto w-40 h-1 mb-3 bg-secondary;
+}
+
+.section-title {
+  @apply pb-10 text-center;
+}
+
+.section-title .title {
+  @apply text-2xl text-primary py-2;
+}
+
+
+.section-title .subtitle {
+  @apply text-slate-500;
+}
+
+@screen md {
+  .solutions-content .solutions-footer {
+    @apply px-8;
+  }
+}
+
+@screen lg {
+  .section-title .title {
+    @apply text-4xl;
+  }
+
+  .section-title .subtitle {
+    @apply text-xl;
+  }
+}
+
+
+
+/* Our Solutions Start */
+
+.solutions-area {
+  @apply bg-white py-16;
+}
+
+.solutions-section {
+  @apply relative mx-auto max-w-7xl pt-4 pb-8 px-4;
+}
+
+.solutions-grid {
+  @apply grid grid-cols-1 gap-y-20;
+}
+
+.solutions-card {
+  @apply flex flex-col rounded-2xl bg-white drop-shadow duration-300;
+}
+
+.solutions-card:hover {
+  @apply border-secondary;
+}
+
+.solutions-content {
+  @apply relative flex-1 px-6 pt-6 pb-8 text-center;
+}
+
+.solutions-icon {
+  @apply relative inline-block;
+}
+
+.solutions-icon img {
+  @apply duration-300;
+}
+
+.solutions-icon i {
+  @apply absolute top-0 left-0 flex items-center justify-center w-full h-full text-3xl text-white;
+}
+
+.solutions-icon .shape-1 {
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.solutions-title {
+  @apply text-center pt-6 text-lg font-medium text-sky-800;
+}
+
+.solutions-span {
+  @apply mt-4 text-base text-slate-600;
+}
+
+.solutions-footer {
+  @apply bg-white text-center rounded-bl-2xl rounded-br-2xl p-6 duration-300;
+}
+
+.solutions-footspan {
+  @apply text-base font-medium text-primary;
+}
+
+.solutions-footspan:hover {
+  @apply text-secondary;
+}
+
+/* Our Solutions End */
+
+/* Services Start */
+
+.services {
+  background-image: url("/assets/images/banner-bg.svg");
+  @apply py-20;
+}
+
+.services-card {
+  @apply flow-root rounded-lg bg-white px-6 pb-8 h-72 drop-shadow;
+}
+
+.services-i-bg {
+  @apply inline-flex items-center justify-center -mt-6 rounded-md p-3 shadow-lg;
+}
+
+.services-svg {
+  @apply h-10 w-10 text-white;
+}
+
+.services-title {
+  @apply mt-8 text-lg font-medium tracking-tight text-primary;
+}
+
+.services-description {
+  @apply mt-5 text-base text-neutral;
+}
+
+/* Services End */
+
+/* Our Company Start */
+
+.company {
+  @apply bg-slate-100 relative py-20;
+}
+
+.company-section-title {
+  @apply pb-8;
+}
+
+.company-section-title .title {
+  @apply text-2xl text-primary py-2;
+}
+
+.about-shape-1 {
+  z-index: -1;
+  width: 35%;
+  @apply absolute top-0 right-0 h-full;
+}
+
+.about-shape-2 {
+  z-index: -1;
+  width: 35%;
+  @apply absolute top-0 left-0 h-full;
+}
+
+/* Our Company End */
+
+.divider {
+  position: relative;
+  height: 1px;
+}
+
+.div-dot:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+  background-color: goldenrod;
+  border: 1px solid rgb(48, 49, 51);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px white,
+    0 0 0 4px white;
+}
+
+.team {
+  @apply pt-24;
+}
+
+/* Cool Fact Start */
+
+.single-counter {
+  width: 155px;
+  height: 120px;
+  border-radius: 60px;
+  @apply relative z-10 mt-16;
+}
+
+.single-counter::before {
+  content: '';
+  border-radius: 60px;
+  z-index: -1;
+  @apply absolute top-0 left-0 w-full h-full transform -rotate-45;
+}
+
+.counter-color-1::before {
+  background-image: linear-gradient(#33c8c1 0%, #119bd2 100%);
+}
+
+.counter-color-2::before {
+  background-image: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+}
+
+.counter-color-3::before {
+  background-image: linear-gradient(#361cc1 0%, #2e82ef 100%);
+}
+
+/* Cool Facts End */
+
+.footer {
+  background-image: url("/assets/images/banner-bg2.svg");
+}
+
+.back-to-top {
+  background-size: 200% auto;
+  @apply bg-primary fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 overflow-hidden text-white duration-300 rounded;
+}
+
+.back-to-top:hover {
+  @apply bg-right;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}

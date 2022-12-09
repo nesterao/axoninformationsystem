@@ -1,0 +1,19 @@
+{
+  "name": "axon-info-sys-website",
+  "version": "1.0.0",
+  "description": "Axon Informaiton Systems Website",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css",
+    "watch": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "Nester Okertchiri",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.4"
+  }
+}

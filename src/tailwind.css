@@ -23,7 +23,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -41,7 +41,7 @@ p {
 }
 
 .navbar-area {
-  @apply absolute top-0 left-0 z-40 w-full py-2 duration-300 bg-transparent;
+  @apply absolute top-0 left-0 z-40 w-full py-2 duration-300;
 }
 
 .sticky {
@@ -88,11 +88,11 @@ p {
 }
 
 .sticky .navbar-nav .nav-item a {
-  @apply text-gray-900;
+  @apply text-gray-800;
 }
 
 .show .navbar-nav .nav-item a {
-  @apply text-gray-900;
+  @apply text-gray-800;
 }
 
 .show .navbar-nav .nav-item.active a,
@@ -118,17 +118,21 @@ p {
 }
 
 .main-btn {
-  @apply inline-block px-6 py-3 font-medium text-white duration-300 bg-primary rounded-lg;
+  @apply inline-block px-6 py-2 font-medium text-primary duration-300 border-b-4 border-secondary rounded-sm;
 }
 
 .main-btn:hover {
-  @apply bg-blue-600;
+  background-color: rgba(60, 180, 180, 0.16);
 }
 
 .header-hero {
-  background-image: url("/assets/images/banner-bg2.svg");
-  /* background: linear-gradient(60deg, rgba(0, 171, 193, 0.398) 20%, rgba(84, 58, 183, 0.4) 80%); */
-  @apply relative z-20 pt-24 pb-16;
+  /* background-image: url("/assets/images/banner-bg2.svg"); */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(60, 180, 180, 0.24) 80%);
+  @apply relative z-20 pt-24 pb-16 bg-white;
+}
+
+.header-hero-content{
+  @apply pb-8 col-span-1 flex px-8 items-center;
 }
 
 .our-clients {

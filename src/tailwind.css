@@ -41,13 +41,11 @@ p {
 }
 
 .navbar-area {
-  @apply absolute top-0 left-0 z-40 w-full py-2 duration-300;
+  @apply absolute top-0 left-0 z-40 w-full py-2 duration-300 bg-transparent;
 }
-
 .sticky {
-  @apply fixed py-1 bg-white shadow;
+  @apply fixed py-1 bg-white shadow-sm;
 }
-
 @media (max-width: 1024px) {
   .navbar-area {
     @apply py-6;
@@ -55,7 +53,8 @@ p {
 }
 
 .collapse.show {
-  @apply block;
+  display: block;
+  visibility: visible;
 }
 
 .toggler-icon {
@@ -64,35 +63,30 @@ p {
   width: 30px;
   margin: 6px 0;
 }
-
 .sticky .toggler-icon {
   @apply bg-gray-900;
 }
-
-.active > .toggler-icon:nth-child(1) {
+.active>.toggler-icon:nth-child(1) {
   @apply transform rotate-45;
   top: 7px;
 }
-
-.active > .toggler-icon:nth-child(2) {
+.active>.toggler-icon:nth-child(2) {
   @apply opacity-0;
 }
-
-.active > .toggler-icon:nth-child(3) {
+.active>.toggler-icon:nth-child(3) {
   top: -8px;
   transform: rotate(135deg);
 }
 
 .navbar-nav .nav-item a {
-  @apply relative inline-block px-4 py-3 text-primary capitalize duration-300;
+  @apply relative inline-block px-4 py-3 text-black capitalize duration-300;
 }
-
 .sticky .navbar-nav .nav-item a {
-  @apply text-gray-800;
+  @apply text-gray-900;
 }
 
 .show .navbar-nav .nav-item a {
-  @apply text-gray-800;
+  @apply text-gray-900;
 }
 
 .show .navbar-nav .nav-item.active a,
@@ -101,7 +95,6 @@ p {
 .sticky .navbar-nav .nav-item a:hover {
   @apply text-primary;
 }
-
 .gradient-btn {
   @apply bg-primary;
   overflow: hidden;

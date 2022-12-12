@@ -4,8 +4,8 @@
   "description": "Axon Informaiton Systems Website",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css",
-    "watch": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --watch"
+    "build": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css",
+    "watch": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch"
   },
   "keywords": [],
   "author": "Nester Okertchiri",

@@ -23,7 +23,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 }
 
 .container {
-  @apply px-5 mx-auto;
+  @apply px-8 mx-auto;
 }
 
 .row {
@@ -66,14 +66,14 @@ p {
 .sticky .toggler-icon {
   @apply bg-gray-900;
 }
-.active>.toggler-icon:nth-child(1) {
+.active > .toggler-icon:nth-child(1) {
   @apply transform rotate-45;
   top: 7px;
 }
-.active>.toggler-icon:nth-child(2) {
+.active > .toggler-icon:nth-child(2) {
   @apply opacity-0;
 }
-.active>.toggler-icon:nth-child(3) {
+.active > .toggler-icon:nth-child(3) {
   top: -8px;
   transform: rotate(135deg);
 }
@@ -120,17 +120,52 @@ p {
 
 .header-hero {
   /* background-image: url("/assets/images/banner-bg2.svg"); */
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(60, 180, 180, 0.24) 80%);
-  @apply relative z-20 pt-24 pb-16 bg-white;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(60, 180, 180, 0.24) 80%
+  );
+  @apply relative z-20 pt-8  bg-white;
 }
 
-.header-hero-content{
+.header-hero-content {
   @apply pb-8 col-span-1 flex px-8 items-center;
+}
+
+.hero-img {
+  @apply h-80;
 }
 
 .our-clients {
   background-image: url("/assets/images/banner-bg2.svg");
-  @apply relative pt-24;
+  @apply relative pt-8;
+}
+
+.title-sequence{
+  transition: opacity 1s linear;
+}
+
+.fade{
+  opacity: 0;
+}
+
+/* lineup class and keyframes */
+.lineUp {
+  animation: anim-lineUp 2s linear;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 /* .single-logo {
@@ -163,7 +198,7 @@ p {
 
 @screen lg {
   .section-title .title {
-    @apply text-4xl;
+    @apply text-2xl;
   }
 
   .section-title .subtitle {
@@ -412,4 +447,8 @@ p {
     height: 40px;
     min-height: 40px;
   }
+}
+
+.contact-us {
+  @apply pt-24;
 }

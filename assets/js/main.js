@@ -50,6 +50,37 @@ $(function () {
     $(".navbar-toggler").removeClass("active");
   });
 
+  var title = ["- Engage", "- Accelerate", "- Scale", "- Sustain"];
+  var subtitle = [
+    "our agile software development team to co-create or update your digital product with the latest web, mobile and cloud technologies.",
+    "your businesses growth with our proven development servicess and products to achieve zero latency.",
+    "your company capabilities by decresing technology costs without losing on high quality.",
+    "your top business level with our software infrustructure and delivery services.",
+  ];
+
+  var counter = 1;
+
+  var inst = setInterval(textSequence, 8000);
+
+  function textSequence() {
+    $(".sequence").removeClass("lineUp");
+
+    setTimeout(function () {
+      $(".sequence").addClass("lineUp");
+
+      document.getElementById("title-sequence").innerHTML = title[counter];
+      document.getElementById("subtitle-sequence").innerHTML =
+        subtitle[counter];
+
+      counter++;
+
+      if (counter >= title.length) {
+        counter = 0;
+      }
+    }, 1000);
+  }
+  // }
+
   //===== testimonial active
 
   $(".testimonial-active").slick({

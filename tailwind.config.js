@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*.html", "./assets/js/main.js"],
   theme: {
@@ -5,11 +6,6 @@ module.exports = {
       inset: {
         100: "100%",
       },
-
-      // padding: {
-      //   120: "120px",
-      // },
-
       colors: {
         primary: "#004C7F",
         secondary: "#F8A527",
@@ -17,6 +13,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [],
+  variants: {},
 };

@@ -1,19 +1,19 @@
 {
-  "name": "axon-info-sys-website",
+  "name": "play-tailwind",
   "version": "1.0.0",
-  "description": "Axon Informaiton Systems Website",
+  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css",
-    "watch": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch"
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uideck/play-tailwind.git"
   },
   "keywords": [],
-  "author": "Nester Okertchiri",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
-  },
-  "dependencies": {
-    "flowbite": "^1.5.4"
+    "tailwindcss": "^3.0.15"
   }
 }

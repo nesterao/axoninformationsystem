@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axon | Health Pro Solution</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+
+  <!--====== Line Icons CSS ======-->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/animate.css" />
+  <link rel="stylesheet" href="/assets/css/tailwind.css" />
+
+  <!-- ==== WOW JS ==== -->
+  <script src="/assets/js/wow.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <!-- ====== Navbar Section Start -->
+  <div class="top-banner fixed top-0 z-50 hidden w-full bg-white px-5 py-2 lg:flex">
+    <div class="container flex justify-between ">
+      <a href="/index.html" class="navbar-logo">
+        <img src="/assets/images/logo/uplogo2.svg" alt="logo" class="h-8 header-logo" />
+      </a>
+      <div class="my-auto text-primary ">
+        <ul class="hidden lg:flex sm:space-x-0 lg:space-x-4">
+          <li class="">
+            <i class="lni lni-map-marker icon align-middle text-secondary"></i>
+            <h5 class="inline text-sm align-middle">B30/9 Adjuma Crescent, South Industrial Area, Accra</h5>
+          </li>
+          <li class="">
+            <i class="lni lni-envelope icon align-middle text-secondary"></i>
+            <h5 class="inline text-sm align-middle">info@axoninfosystems.com</h5>
+          </li>
+          <li>
+            <i class="lni lni-phone icon align-middle text-secondary"></i>
+            <h5 class="inline text-sm align-middle">(+233) 204-330035</h5>
+          </li>
+        </ul>
+      </div>
+      <a href="contact.html"
+        class="text-sm rounded-md border shadow-sm px-4 py-2 font-normal text-primary hover:bg-primary/90 hover:text-white hover:shadow-lg transition duration-400 ease-in-out">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="ud-header sticky bg-transparent bg-white lg:bg-primary/80 top-0 lg:top-[50px] left-0 z-40 w-full flex items-center">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="flex lg:hidden px-4 w-64 max-w-full">
+          <a href="/index.html" class="navbar-logo w-full block py-5">
+            <img src="/assets/images/logo/uplogo2.svg" alt="logo" class="w-full header-logo" />
+          </a>
+        </div>
+        <div class="flex px-4 justify-center items-center w-full">
+          <div>
+            <button title="navbarToggler" id="navbarToggler"
+              class="block absolute right-4 top-1/2 -translate-y-1/2 lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg">
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+            </button>
+            <nav id="navbarCollapse"
+              class="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[800px] w-full lg:max-w-[900px] lg:w-[900px] right-4 top-full hidden lg:block lg:static lg:shadow-none">
+              <ul class="block lg:flex uppercase justify-center space-x-0 md:space-x-10 font-semibold text-sm">
+                <li class="relative group submenu-item">
+                  <a href="javascript:void(0)"
+                    class="text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 lg:pr-4 flex mx-8 lg:mx-2.5 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]">
+                    Products & Solutions
+                  </a>
+                  <div
+                    class="submenu hidden relative lg:absolute sm:max-w-[360px] md:w-[480px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
+                    <div class="pl-4 md:pl-0">
+                      <div class="group relative flex gap-x-1 rounded-lg p-2  text-xs md:text-sm hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="tax_man_solution.html" class="block font-semibold text-gray-600">
+                            Tax Management Solutions
+                          </a>
+                          <p class="hidden md:flex text-xs md:mt-1 font-light text-gray-600">Streamline tax with our
+                            management solution.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="mt-2 group relative flex gap-x-1 rounded-lg p-2 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="#home" class="block font-semibold text-gray-600">
+                            Health Pro
+                          </a>
+                          <p class="hidden md:flex text-xs md:mt-1 font-light text-gray-600">Revolutionize with our
+                            comprehensive solution.</p>
+                        </div>
+                      </div>
+                      <div class="mt-2 group relative flex gap-x-1 rounded-lg p-2 text-xs md:text-sm hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="biometric_solution.html" class="block font-semibold text-gray-600">
+                            Biometric Voter Management
+                          </a>
+                          <p class="hidden md:flex text-xs mt-1 font-light text-gray-600">Secure and reliable voting
+                            with our BVMS.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="mt-2 group relative flex gap-x-1 rounded-lg p-2 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="cubes_solution.html" class="block font-semibold text-gray-600">
+                            Cubes POS Solution
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="hidden md:flex text-xs mt-1 font-light text-gray-600">Empowering businesses with a
+                            versatile software.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="mt-2 group relative flex gap-x-1 rounded-lg p-2 text-xs md:text-sm hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="payroll_solution.html" class="block font-semibold text-gray-600">
+                            Axon Payroll
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="hidden md:flex text-xs mt-1 font-light text-gray-600">Effortlessly manage payroll
+                            with our software.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="mt-2 divide-x rounded-md border divide-gray-900/5 bg-gray-50">
+                      <a href="solutions.html"
+                        class="flex items-center justify-center p-3 text-xs font-medium  text-primary hover:bg-gray-100">
+                        View All
+                      </a>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="relative group submenu-item">
+                  <a href="javascript:void(0)"
+                    class="text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 lg:pr-4 flex mx-8 lg:mx-2.5 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]">
+                    Services
+                  </a>
+                  <div
+                    class="submenu hidden relative lg:absolute sm:max-w-[360px] md:w-[480px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
+                    <div class="pl-4 md:pl-0">
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            Biometric & Security
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            E-Governement & Public Services
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            Healthcare Software Services
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            Payroll & Taxation
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            Retail & eCommerce
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="javascript:void(0)" class="block font-semibold text-gray-600">
+                            Student Loan Software Services
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="mt-2 divide-x rounded-md border divide-gray-900/5 bg-gray-50">
+                      <a href="services.html"
+                        class="flex items-center justify-center p-3 text-xs font-medium  text-primary hover:bg-gray-100">
+
+                        View All
+                      </a>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="relative group">
+                  <a href="portfolio-grids.html"
+                    class="ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mx-2.5">
+                    Portfolio
+                  </a>
+                </li>
+                <li class="relative group submenu-item">
+                  <a href="javascript:void(0)"
+                    class="text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 lg:pr-4 flex mx-8 lg:mx-2.5 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]">
+                    Our Company
+                  </a>
+                  <div
+                    class="submenu hidden relative lg:absolute sm:max-w-[360px] md:w-[480px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
+                    <div class="pl-4 md:pl-0">
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+
+                        <div class="flex-auto">
+                          <a href="our_company.html" class="block font-semibold text-gray-600">
+                            At Axon
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-600">
+                            Careers
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="relative group submenu-item">
+                  <a href="javascript:void(0)"
+                    class="text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 lg:pr-4 flex mx-8 lg:mx-2.5 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]">
+                    About Us
+                  </a>
+                  <div
+                    class="submenu hidden relative lg:absolute sm:max-w-[360px] md:w-[480px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
+                    <div class="pl-4 md:pl-0">
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+
+                        <div class="flex-auto">
+                          <a href="about.html" class="block font-semibold text-gray-600">
+                            Who We Are
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-1 rounded-lg p-4 text-xs md:text-sm  hover:bg-gray-50">
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-600">
+                            Our Team
+                            <span class="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Navbar Section End -->
+
+  <!-- ====== Banner Section Start -->
+  <div id="home"
+    class="relative z-10 pt-[160px] md:pt-[130px] lg:pt-[190px] pb-[80px] bg-gradient-to-bl from-[#188FC3]/80 via-[#1E67C2]/90 to-[#1E67C2] overflow-hidden">
+    <div class="container">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="w-full px-4">
+          <div class="text-center">
+            <h1 class="font-semibold text-white text-4xl">Health Pro Solution</h1>
+            <p class="text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-white">
+              Revolutionize with our comprehensive solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="absolute top-0 left-0 z-[-1]">
+        <svg width="495" height="470" viewBox="0 0 495 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="55" cy="442" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
+          <circle cx="446" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
+          <path d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z" stroke="white"
+            stroke-opacity="0.08" stroke-width="12" />
+        </svg>
+      </span>
+      <span class="absolute top-0 right-0 z-[-1]">
+        <svg width="493" height="470" viewBox="0 0 493 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="462" cy="5" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
+          <circle cx="49" cy="470" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
+          <path d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z" stroke="white"
+            stroke-opacity="0.06" stroke-width="13" />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <!-- ====== Banner Section End -->
+
+  <!-- ====== Solution Details Section Start -->
+  <section class="pb-10 lg:pb-20">
+    <div class="container">
+      <div class="flex flex-wrap justify-center -mx-4">
+        <div class="w-full px-4">
+          <section class="text-gray-700">
+            <div class=" py-16">
+              <div class="flex flex-wrap -m-1 md:-m-2 ">
+                <div class="flex flex-wrap w-1/2">
+                  <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-150 "
+                      src="/assets/images/solutions/itas_solution.jpg">
+                  </div>
+                  <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-150"
+                      src="/assets/images/solutions/itas_solution1.jpg">
+                  </div>
+                  <div class="w-full p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-110"
+                      src="/assets/images/solutions/itas_solution2.jpg">
+                  </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                  <div class="w-full p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-110"
+                      src="/assets/images/solutions/itas_solution3.jpg">
+                  </div>
+                  <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-150"
+                      src="/assets/images/solutions/itas_solution4.jpg">
+                  </div>
+                  <div class="w-1/2 p-1 md:p-2">
+                    <img alt="gallery"
+                      class="block object-fill border border-primary/40 object-center w-full h-full rounded hover:scale-150"
+                      src="/assets/images/solutions/itas_solution5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-8/12 px-4">
+              <div class="">
+                <div class=" max-w-7xl ">
+                  <h2
+                    class="font-medium text-dark sm:text-xl md:text-2xl leading-snug sm:leading-snug md:leading-snug mb-6 wow fadeInUp"
+                    data-wow-delay=".1s
+                    ">
+                    Health Pro Solution is a software solution for healthcare providers that provides a range of
+                    features to help manage patient health records, appointments, billing, and insurance. Here's a more
+                    detailed explanation of the features mentioned:
+                  </h2>
+                  <dl
+                    class=" grid  grid-cols-1 gap-x-6 gap-y-8 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Electronic Medical Records (EMR):
+                      </dt>
+                      <dd class="inline">Health Pro Solution provides a centralized, digital repository for patient
+                        health information, including medical history, medications, allergies, and laboratory results.
+                        This feature allows healthcare providers to access patient information quickly and easily, and
+                        make informed decisions about patient care.</dd>
+                    </div>
+
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Appointment Scheduling and Reminders:
+                      </dt>
+                      <dd class="inline">Health Pro Solution provides an intuitive appointment scheduling system that
+                        enables patients to book appointments online and send automated reminders. This feature
+                        streamlines the appointment booking process and reduces the risk of missed appointments, helping
+                        to improve patient satisfaction and reduce no-shows.
+                      </dd>
+                    </div>
+
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Billing and Insurance Management:
+                      </dt>
+                      <dd class="inline">Health Pro Solution has an integrated billing module that simplifies the
+                        process of insurance claims, invoicing, and payment collection, ensuring accurate and timely
+                        reimbursement. This feature helps healthcare providers to manage their finances effectively and
+                        ensures that they are reimbursed for services provided.</dd>
+                    </div>
+
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Prescription Management:
+                      </dt>
+                      <dd class="inline">Health Pro Solution can manage patient prescriptions, including prescription
+                        orders, renewals, and refills. This feature ensures that patients receive the right medication
+                        at the right time and reduces the risk of medication errors.</dd>
+                    </div>
+
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Clinical Decision Support:
+                      </dt>
+                      <dd class="inline">Health Pro Solution can provide clinical decision support tools, such as drug
+                        interaction alerts, clinical guidelines, and decision trees. This feature helps healthcare
+                        providers to make informed decisions about patient care, based on the latest medical evidence
+                        and best practices.
+                      </dd>
+                    </div>
+
+                    <div class="relative ">
+                      <dt class="inline font-semibold text-gray-900">
+                        Telehealth:
+                      </dt>
+                      <dd class="inline">Health Pro Solution can provide telehealth capabilities, enabling healthcare
+                        providers to consult with patients remotely, via video or audio conferencing. This feature
+                        provides patients with access to care from the comfort of their own home and improves access to
+                        care in remote or underserved areas.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-4/12 px-4 py-8 lg:py-0">
+              <div>
+                <div
+                  class="mb-12 bg-primary rounded relative overflow-hidden text-center py-[60px] px-11 lg:px-8 wow fadeInUp"
+                  data-wow-delay=".1s
+                    ">
+                  <h3 class="font-semibold text-white mb-2 text-2xl">
+                    Ready to get started!
+                  </h3>
+                  <p class="text-base text-white mb-8">
+                    Enter your email to request for a demo.
+                  </p>
+                  <form>
+                    <input type="email" placeholder="Your email address"
+                      class="w-full text-center h-[50px] text-sm font-normal bg-white bg-opacity-20 placeholder-white text-white rounded mb-4 outline-none border border-transparent focus-visible:shadow-none focus:border-white" />
+                    <input type="submit" value="Request Demo"
+                      class="w-full text-center h-[50px] text-sm font-normal text-white rounded mb-6 bg-secondary cursor-pointer hover:shadow-lg hover:bg-opacity-90 transition duration-300 ease-in-out" />
+                  </form>
+                  <p class="text-sm font-medium text-white">
+                    We would love to hear from you.
+                  </p>
+                  <div>
+                    <span class="absolute top-0 right-0">
+                      <img src="/assets/images/solutions/dots.svg" alt="dots1" />
+                    </span>
+                    <span class="absolute bottom-0 left-0">
+                      <img src="/assets/images/solutions/dots.svg" alt="dots2" />
+                    </span>
+                  </div>
+                </div>
+                <h2
+                  class="font-medium text-neutral text-lg leading-snug sm:leading-snug md:leading-snug mb-6 wow fadeInUp"
+                  data-wow-delay=".1s
+                    ">
+                  Health Pro Solution provides healthcare providers with a comprehensive solution for patient health
+                  record management, appointment scheduling, billing, and insurance management, enabling them to provide
+                  high-quality care and improve patient outcomes.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Blog Details Section End -->
+
+  <!-- ====== All Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -57,12 +57,12 @@ body {
 }
 
 .home {
-  background-image: url("../assets/images/about/feature-3.svg");
+  background-image: "../assets/images/about/feature-3.svg";
   background-size: cover;
 }
 
 .body {
-  background-image: url("../assets/images/about/about-bg.svg");
+  background-image: "../assets/images/about/about-bg.svg";
   background-size: auto;
   background-repeat: no-repeat;
 }
